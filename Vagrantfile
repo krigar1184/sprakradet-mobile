@@ -16,7 +16,11 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "hashicorp/precise64"
   config.vm.box_version = "1.1.0"
-  config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision "shell", path: "bootstrap.sh"
+  config.vm.provision "docker" do |d|
+    d.pull_images "clojure"
+    d.build_image "/vagrant", args:"-t krigar1184/${PWD##*/}"
+  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
