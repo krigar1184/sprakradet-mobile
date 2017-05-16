@@ -9,19 +9,36 @@ Vagrant.configure(2) do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
-  config.vm.provider :libvirt do |libvirt|
-    libvirt.driver = "qemu"
-  end
+
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "hashicorp/precise64"
   config.vm.box_version = "1.1.0"
-  config.vm.provision "shell", path: "bootstrap.sh"
-  config.vm.provision "docker" do |d|
-    d.pull_images "clojure"
-    d.build_image "/vagrant", args:"-t krigar1184/${PWD##*/}"
+  config.vm.network "private_network", type: "dhcp"
+  config.vm.synced_folder ".", "/vagrant", type: "nfs",
+    nfs_version: 3,
+    nfs_udp: true
+
+  config.vm.provider :libvirt do |lv|
+    lv.driver = "qemu"
+    lv.memory = 512
+    lv.cpus = 1
   end
 
+  config.vm.provision :shell do |s|
+    s.path = "bootstrap.sh"
+  end
+
+  # config.vm.provision :docker do |d|
+  #  d.build_image "/vagrant", args: "-t krigar1184/sprakradet-mobile"
+  #end
+
+  if Vagrant.has_plugin?("vagrant-cachier")
+    config.cache.scope = :box
+    config.cache.synced_folder_opts = {
+      type: :nfs,
+    }
+  end
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
