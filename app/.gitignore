@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /target
 /classes
 /checkouts
@@ -9,3 +10,13 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+=======
+/pom.xml
+*jar
+/lib
+/classes
+/native
+/.lein-failures
+/checkouts
+/.lein-deps-sum
+>>>>>>> af7e882c7a3bbf420051c0bbeebe4cc3d4ccfc02
