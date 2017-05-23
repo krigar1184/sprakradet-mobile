@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /target
 /classes
 /checkouts
@@ -11,6 +12,8 @@ pom.xml.asc
 .hgignore
 .hg/
 =======
+=======
+>>>>>>> af7e882c7a3bbf420051c0bbeebe4cc3d4ccfc02
 /pom.xml
 *jar
 /lib
@@ -19,4 +22,7 @@ pom.xml.asc
 /.lein-failures
 /checkouts
 /.lein-deps-sum
+<<<<<<< HEAD
+>>>>>>> af7e882c7a3bbf420051c0bbeebe4cc3d4ccfc02
+=======
 >>>>>>> af7e882c7a3bbf420051c0bbeebe4cc3d4ccfc02
