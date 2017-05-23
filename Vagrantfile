@@ -19,14 +19,16 @@ Vagrant.configure(2) do |config|
     nfs_version: 3,
     nfs_udp: true
 
-  config.vm.provider :libvirt do |lv|
-    lv.driver = "qemu"
-    lv.memory = 512
-    lv.cpus = 1
+  config.ssh.insert_key = false
+
+  config.vm.provider :libvirt do |libvirt|
+    libvirt.driver = "qemu"
+    libvirt.memory = 512
+    libvirt.cpus = 1
   end
 
-  config.vm.provision :shell do |s|
-    s.path = "bootstrap.sh"
+  config.vm.provision :shell do |shell|
+    shell.path = "bootstrap.sh"
   end
 
   # config.vm.provision :docker do |d|

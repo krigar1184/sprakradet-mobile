@@ -1,0 +1,239 @@
+execve("/usr/bin/ls", ["ls", "-la"], [/* 62 vars */]) = 0
+brk(NULL)                               = 0x562f25829000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f14163d7000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=160913, ...}) = 0
+mmap(NULL, 160913, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f14163af000
+close(3)                                = 0
+open("/lib64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000c\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=153176, ...}) = 0
+mmap(NULL, 2253688, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1415f8e000
+mprotect(0x7f1415fb1000, 2097152, PROT_NONE) = 0
+mmap(0x7f14161b1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7f14161b1000
+mmap(0x7f14161b3000, 4984, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f14161b3000
+close(3)                                = 0
+open("/lib64/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\25\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=18608, ...}) = 0
+mmap(NULL, 2113840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1415d89000
+mprotect(0x7f1415d8d000, 2093056, PROT_NONE) = 0
+mmap(0x7f1415f8c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f1415f8c000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\10\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2089496, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f14163ae000
+mmap(NULL, 3938656, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f14159c7000
+mprotect(0x7f1415b80000, 2093056, PROT_NONE) = 0
+mmap(0x7f1415d7f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b8000) = 0x7f1415d7f000
+mmap(0x7f1415d85000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1415d85000
+close(3)                                = 0
+open("/lib64/libpcre.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\25\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=471736, ...}) = 0
+mmap(NULL, 2564360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1415754000
+mprotect(0x7f14157c6000, 2093056, PROT_NONE) = 0
+mmap(0x7f14159c5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x71000) = 0x7f14159c5000
+close(3)                                = 0
+open("/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=19736, ...}) = 0
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1415550000
+mprotect(0x7f1415553000, 2093056, PROT_NONE) = 0
+mmap(0x7f1415752000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f1415752000
+close(3)                                = 0
+open("/lib64/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\22\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=19240, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f14163ad000
+mmap(NULL, 2113552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f141534b000
+mprotect(0x7f141534f000, 2093056, PROT_NONE) = 0
+mmap(0x7f141554e000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f141554e000
+mmap(0x7f141554f000, 16, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f141554f000
+close(3)                                = 0
+open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0``\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=142312, ...}) = 0
+mmap(NULL, 2208808, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f141512f000
+mprotect(0x7f1415146000, 2093056, PROT_NONE) = 0
+mmap(0x7f1415345000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f1415345000
+mmap(0x7f1415347000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1415347000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f14163ac000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f14163aa000
+arch_prctl(ARCH_SET_FS, 0x7f14163aa800) = 0
+mprotect(0x7f1415d7f000, 16384, PROT_READ) = 0
+mprotect(0x7f1415345000, 4096, PROT_READ) = 0
+mprotect(0x7f141554e000, 4096, PROT_READ) = 0
+mprotect(0x7f1415752000, 4096, PROT_READ) = 0
+mprotect(0x7f14159c5000, 4096, PROT_READ) = 0
+mprotect(0x7f1415f8c000, 4096, PROT_READ) = 0
+mprotect(0x7f14161b1000, 4096, PROT_READ) = 0
+mprotect(0x562f23da6000, 8192, PROT_READ) = 0
+mprotect(0x7f14163d8000, 4096, PROT_READ) = 0
+munmap(0x7f14163af000, 160913)          = 0
+set_tid_address(0x7f14163aaad0)         = 11570
+set_robust_list(0x7f14163aaae0, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f1415134b00, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f141513fc30}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f1415134b90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f141513fc30}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+brk(NULL)                               = 0x562f25829000
+brk(0x562f2584a000)                     = 0x562f2584a000
+access("/etc/selinux/config", F_OK)     = 0
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=111950656, ...}) = 0
+mmap(NULL, 111950656, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f140e66b000
+close(3)                                = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TIOCGWINSZ, {ws_row=53, ws_col=211, ws_xpixel=0, ws_ypixel=0}) = 0
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2997, ...}) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2997
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+open("/usr/share/locale/en_US.UTF-8/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US.utf8/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.UTF-8/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.utf8/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26254, ...}) = 0
+mmap(NULL, 26254, PROT_READ, MAP_SHARED, 3, 0) = 0x7f14163d0000
+close(3)                                = 0
+futex(0x7f1415d848a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents(3, /* 12 entries */, 32768)    = 376
+lstat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lgetxattr(".", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+access("/var/run/setrans/.setrans-unix", F_OK) = -1 ENOENT (No such file or directory)
+futex(0x7f14161b4360, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getxattr(".", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+getxattr(".", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available)
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1750, ...}) = 0
+read(4, "#\n# /etc/nsswitch.conf\n#\n# An ex"..., 4096) = 1750
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=160913, ...}) = 0
+mmap(NULL, 160913, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f1416382000
+close(4)                                = 0
+open("/lib64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P!\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=57184, ...}) = 0
+mmap(NULL, 2168568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f140e459000
+mprotect(0x7f140e464000, 2093056, PROT_NONE) = 0
+mmap(0x7f140e663000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa000) = 0x7f140e663000
+mmap(0x7f140e665000, 22264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f140e665000
+close(4)                                = 0
+mprotect(0x7f140e663000, 4096, PROT_READ) = 0
+munmap(0x7f1416382000, 160913)          = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=3127, ...}) = 0
+read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 3127
+close(4)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1283, ...}) = 0
+read(4, "root:x:0:\nbin:x:1:\ndaemon:x:2:\ns"..., 4096) = 1283
+close(4)                                = 0
+lstat("Dockerfile", {st_mode=S_IFREG|0664, st_size=177, ...}) = 0
+lgetxattr("Dockerfile", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr("Dockerfile", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+lstat(".vagrant", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lgetxattr(".vagrant", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr(".vagrant", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+getxattr(".vagrant", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available)
+lstat(".Vagrantfile.swp", {st_mode=S_IFREG|0644, st_size=12288, ...}) = 0
+lgetxattr(".Vagrantfile.swp", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr(".Vagrantfile.swp", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+lstat(".bootstrap.sh.swp", {st_mode=S_IFREG|0644, st_size=12288, ...}) = 0
+lgetxattr(".bootstrap.sh.swp", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr(".bootstrap.sh.swp", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+lstat(".logs", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lgetxattr(".logs", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr(".logs", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+getxattr(".logs", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available)
+lstat("README.md", {st_mode=S_IFREG|0664, st_size=53, ...}) = 0
+lgetxattr("README.md", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr("README.md", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+lstat(".git", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lgetxattr(".git", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr(".git", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+getxattr(".git", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available)
+lstat(".gitignore", {st_mode=S_IFREG|0664, st_size=20, ...}) = 0
+lgetxattr(".gitignore", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr(".gitignore", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+lstat("bootstrap.sh", {st_mode=S_IFREG|0664, st_size=170, ...}) = 0
+lgetxattr("bootstrap.sh", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr("bootstrap.sh", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+lstat("Vagrantfile", {st_mode=S_IFREG|0664, st_size=3609, ...}) = 0
+lgetxattr("Vagrantfile", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr("Vagrantfile", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+lstat("..", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lgetxattr("..", "security.selinux", "unconfined_u:object_r:user_home_"..., 255) = 37
+getxattr("..", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+getxattr("..", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available)
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 6), ...}) = 0
+write(1, "total 68\n", 9)               = 9
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0\21\0\0\0\0"..., 4096) = 1544
+lseek(3, -936, SEEK_CUR)                = 608
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0\21\0\0\0\0"..., 4096) = 936
+close(3)                                = 0
+clock_gettime(CLOCK_REALTIME, {tv_sec=1494785667, tv_nsec=907378910}) = 0
+write(1, "drwxrwxr-x.  5 krigar1184 krigar"..., 58) = 58
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "drwxrwxr-x. 30 krigar1184 krigar"..., 59) = 59
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "-rw-rw-r--.  1 krigar1184 krigar"..., 69) = 69
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "-rw-r--r--.  1 krigar1184 krigar"..., 74) = 74
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "-rw-rw-r--.  1 krigar1184 krigar"..., 67) = 67
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "drwxrwxr-x.  8 krigar1184 krigar"..., 61) = 61
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "-rw-rw-r--.  1 krigar1184 krigar"..., 67) = 67
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "drwxrwxr-x.  2 krigar1184 krigar"..., 62) = 62
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "-rw-rw-r--.  1 krigar1184 krigar"..., 66) = 66
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "drwxrwxr-x.  3 krigar1184 krigar"..., 65) = 65
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "-rw-rw-r--.  1 krigar1184 krigar"..., 68) = 68
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1544, ...}) = 0
+write(1, "-rw-r--r--.  1 krigar1184 krigar"..., 73) = 73
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
